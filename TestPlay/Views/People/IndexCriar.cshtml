@@ -1,0 +1,23 @@
+@model PersonModel
+<div class= "text-center">
+
+<h1 class="display-4">Cadastrar um novo contato</h1>
+
+</div>
+
+<form asp-controller="PeopleController" asp-action="IndexCriar" method="Post">
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Digite o nome </label>
+  <input type="text" asp-for="name" class="form-control" id="exampleFormControlInput1" placeholder="Gabriele Silva">
+</div>
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Digite o numero de telefone</label>
+ <input type="text" asp-for="phone" class="form-control" id="exampleFormControlInput1" placeholder="(34) 99233-9484">
+</div>
+
+<div>
+    <button type="submit" class="btn btn-success">Salvar contato</button> 
+    <a class="btn btn-secondary " asp-controller="PeopleController" asp-action="IndexPeople" role="button">Voltar</a>
+</div>
+</form>

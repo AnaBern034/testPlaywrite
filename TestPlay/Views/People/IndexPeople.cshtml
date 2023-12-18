@@ -1,0 +1,36 @@
+@{
+    ViewData["Title"] = "Your Friends";
+}
+
+
+<h1 class="display-4">Listagem de contatos</h1><!-- On tables -->
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Celular</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>twitter</td>
+    </tr>
+  </tbody>
+</table>
+<br/>
+<div class="">
+  <a class="btn btn-primary" role="button" asp-action="IndexCriar" asp-controller="PeopleController">Adicionar novo contato</a>
+</div>
